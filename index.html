@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style/style.css">
+    <title>Etch-a-Scketch</title>
+</head>
+<body>
+    <div class="main">
+        <div class="header">
+                <h1>Etch-a-Scketch</h1>
+        </div>
+            <div class="container">
+                <div class="controls">
+                    <h3>Controls</h3>
+                    <div>
+                        <label for="methodId">Select grid method</label>
+                        <select id="methodId">
+                            <option value="flexbox">Flexbox</option>
+                            <option value="grid">Grid</option>
+                        </select>
+                    </div>
+                    <div>
+                        <div>
+                            <input id="sizeSlider" type="range" value="16" min="1" max="64"></input>
+                            <label for="sizeSlider" id="sliderId">16² cells</label>
+                        </div>
+                        <button id="button">Add cells</button>
+                    </div>
+                    <h4 id="gridSize">Grid size: 0 </h4>
+                    <button id="buttonClearColors">Clear cells</button>
+                    <button id="buttonClearGrid">Clear grid</button>
+                </div>
+                <div id="gridContainerId">
+                    <div id="grid"></div>
+                </div>
+            </div>
+        <div class="footer">
+            <h6>githubn00</h6>
+        </div>
+    </div>
+</body>
+<script src="./script/script.js"></script>
+</html>
